@@ -72,3 +72,45 @@ MIT
 - Check out our [Contributing Guidelines](./CONTRIBUTING.md)
 - Join the discussion in [GitHub Issues](../../issues)
 - Follow development updates
+
+---
+
+## Artist & Creator Onboarding
+
+### Getting Started as a Creator
+
+#### Step 1: Wallet Setup
+1. Install a Stacks-compatible wallet (Leather, Xverse, or Hiro)
+2. Fund your wallet with STX for transaction fees
+3. Verify your wallet address for NFT minting
+
+#### Step 2: Create Your Collection
+1. Design your NFT artwork (recommended: 1000x1000px, under 10MB)
+2. Prepare metadata (name, description, attributes)
+3. Mint your first NFT on QuietMint
+4. Set up your creator profile
+
+#### Step 3: List for Sale
+1. Choose between fixed-price or auction listing
+2. Set competitive pricing based on market rates
+3. Add detailed descriptions and unlockable content
+4. Promote your collection on social media
+
+### Creator Benefits
+- **Royalty Enforcement:** Automatic 5-10% royalties on secondary sales
+- **Bundle Support:** Create themed collections and bulk listings
+- **Auction Flexibility:** Time-bound auctions with reserve prices
+- **Community Building:** Direct connection with collectors
+
+### Supported File Types
+- **Images:** PNG, JPG, GIF, SVG, WebP
+- **Video:** MP4, MOV, AVI (max 100MB)
+- **Audio:** MP3, WAV, FLAC
+- **3D Models:** GLTF, GLB, OBJ
+
+### Best Practices
+- **Consistent Branding:** Maintain cohesive collection themes
+- **Fair Pricing:** Research comparable collections
+- **Community Engagement:** Respond to collectors and build relationships
+- **Regular Drops:** Maintain momentum with scheduled releases
+
