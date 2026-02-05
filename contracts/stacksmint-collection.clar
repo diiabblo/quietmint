@@ -33,10 +33,16 @@
 
 (define-data-var collection-counter uint u0)
 (define-data-var total-minted-all uint u0)
+(define-constant VERIFICATION_NONE u0)
+(define-constant VERIFICATION_BASIC u1)
+(define-constant VERIFICATION_VERIFIED u2)
+(define-constant VERIFICATION_BLUE_CHIP u3)
 
 ;; ============================================================================
 ;; Data Maps
 ;; ============================================================================
+
+(define-map verification-levels uint uint)
 
 ;; Collection core data
 (define-map collections uint {
@@ -240,6 +246,15 @@
   (match (map-get? collections collection-id)
     collection (some (- (get max-supply collection) (get minted-count collection)))
     none))
+
+(define-public (set-verification-level
+  (collection-id uint)
+  (level uint))
+  (begin
+    (asserts! (is-eq tx-sender CONTRACT_OWNER) ERR_NOT_OWNER)
+    (asserts! (<= level u3) (err u112))
+    (map-set verification-levels collection-id level)
+    (ok true)))
 
 (define-read-only (can-mint (collection-id uint))
   (match (map-get? collections collection-id)
